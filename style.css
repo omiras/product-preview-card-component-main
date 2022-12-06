@@ -1,16 +1,26 @@
 :root {
     --neutral-grey: hsl(228, 12%, 48%);
     --primary-cyan: hsl(158, 36%, 37%);
+    --primary-cyan-inactive:  hsl(158, 36%, 37%, 0.7);
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     place-items: center;
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;    
 }
 
 .product {
-    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 .product-image {
@@ -20,6 +30,7 @@ body {
     background-repeat: no-repeat;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+
 }
 
 .product-tag {
@@ -68,12 +79,19 @@ body {
 }
 
 .product-add-button {
-    background-color: var(--primary-cyan);
+    background-color: var(--primary-cyan-inactive);
     text-align: center;
     color: white;
     border-radius: 8px;
     padding: 18px;
     font-size: 1.1em;
+    cursor: pointer;
+}
+
+.product-add-button:active {
+    background-color: var(--primary-cyan);
+    user-select: none;
+
 }
 
 .product-add-button  > span {
@@ -84,4 +102,34 @@ body {
     height: 20px;
     margin-right: 18px;
     vertical-align: middle;
+}
+
+@media (min-width: 1440px) {
+    .product {  
+        flex-direction: row;
+        min-width: 800px;
+        padding: 0;
+        height: 500px;
+        gap: 16px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        border-top-right-radius: 0;
+
+        
+    }
+
+    .product-image {
+      height: auto;
+      width: 100%;
+      background: url('/images/image-product-desktop.jpg')  hsl(30, 38%, 92%);
+      border-top-left-radius: 16px;
+      border-top-right-radius:0;
+
+      border-bottom-left-radius: 16px;
+      background-size: cover;
+    }
+
+    .product-details {
+        padding: 16px;
+    }
 }
