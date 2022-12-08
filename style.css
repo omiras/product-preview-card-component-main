@@ -5,6 +5,10 @@
     --background-general: hsl(30, 38%, 92%);
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
