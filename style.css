@@ -1,7 +1,7 @@
 :root {
     --neutral-grey: hsl(228, 12%, 48%);
     --primary-cyan: hsl(158, 36%, 37%);
-    --primary-cyan-inactive:  hsl(158, 36%, 37%, 0.7);
+    --primary-cyan-inactive:  hsl(158, 36%, 37%, 0.9);
     --background-general: hsl(30, 38%, 92%);
 }
 
