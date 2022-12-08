@@ -108,9 +108,8 @@ body {
 @media (min-width: 1440px) {
     .product {  
         flex-direction: row;
-        min-width: 800px;
+        min-width: 700px;
         padding: 0;
-        height: 500px;
         gap: 16px;
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
